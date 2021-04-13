@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout07</title>
+  <style>
+    *{ /*여백초기화*/
+      margin: 0;
+      padding: 0;
+    }
+    #warp{
+      width: 100%;
+
+    }
+    #header{
+      width: 100%;
+      height: 100px;
+      background-color: #ce93d8 ;
+    }
+    #contents{
+      width: 100%;
+      height: 2000px;
+      background-color: #e1bee7;
+    }
+    #contents #conts1 {
+      width: 100%;
+      height: 1000px;
+      background-color: #ba68c8 ;
+
+    }
+    #contents #conts2 {
+      width: 100%;
+      height: 500px;
+      background-color: #ab47bc ;
+
+    }
+    #contents #conts3 {
+      width: 100%;
+      height: 500px;
+      background-color: #9c27b0 ;
+
+    }
+
+    #footer{
+      width: 100%;
+      height: 100px;
+      background-color: #6a1b9a ;
+    }
+
+    .container{
+      width: 1600px;
+      height: inherit;
+      background-color: rgba(0,0,0,0.4);
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="container">header</div>
+    </header>
+    <section id="contents">
+      <section id="conts1">
+        <div class="container">conts1</div>
+      </section>
+      <section id="conts2">
+        <div class="container">conts2</div>
+      </section>
+      <section id="conts3">
+        <div class="container">conts3</div>
+      </section>
+    </section>
+    <footer id="footer">
+      <div class="container">footer</div>
+    </footer>
+  </div>
+  
+</body>
+</html>

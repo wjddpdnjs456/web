@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #wrap{}
+    #main{
+      width: 1200px;
+      margin: 0 auto;
+    }
+    header{
+      width: 100%;
+      height: 100px;
+      background-color: #e1f5fe;
+    }
+    nav{
+      width: 100%;
+      height: 300px;
+      background-color: #b3e5fc;
+    }
+    #sec1{
+      overflow: hidden;
+    }
+    #sec1 .art1{
+      width: 30%;
+      height: 400px;
+      background-color: #81d4fa;
+      float: left;
+    }
+    #sec1 .art2{
+      width: 70%;
+      height: 200px;
+      background-color: #4fc3f7;
+      float: left;
+    }
+    #sec1 .art3{
+      width: 70%;
+      height: 200px;
+      background-color: #29b6f6;
+      float: left;
+    }
+    #sec2{
+      overflow: hidden;
+    }
+    #sec2 .art2-1{
+      width: 33.3333%;
+      height: 300px;
+      background-color: #039be5 ;
+      float: left;
+    }
+    #sec2 .art2-2{
+      width: 33.3333%;
+      height: 300px;
+      background-color: #0288d1  ;
+      float: left;
+    }
+    #sec2 .art2-3{
+      width: 33.3333%;
+      height: 300px;
+      background-color: #0277bd  ;
+      float: left;
+    }
+    #sec3{
+      width: 100%;
+      height: 200px;
+      background-color: #0091ea ;
+      overflow:hidden;
+    }
+    #sec3 .art3{
+      width: 23%;
+      height: 180px;
+      margin: 1%;
+      border-radius: 10px;
+      background-color: #e0f7fa;
+      float: left;
+    }
+
+    footer{
+      width: 100%;
+      height: 100px;
+      background-color: #80d8ff ;
+    }
+
+    @media (max-width:1200px){
+      #main{width: 100%;}
+      #sec2 .art2-1{width: 50%;}
+      #sec2 .art2-2{width: 50%;}
+      #sec2 .art2-3{display:none;}
+
+      #sec3 .art3{width: 31.3333%;}
+      #sec3 .art3:last-child{display: none;}
+    }
+    @media (max-width:900px){
+      #sec2 .art2-1{width: 100%;}
+      #sec2 .art2-2{width: 100%;}
+    }
+    @media (max-width:700px){
+      #sec1 .art1{width: 100%; height: 200px;}
+      #sec1 .art2{width: 100%; height: 200px;}
+      #sec1 .art3{width: 100%; height: 200px;}
+      #sec3{height: 650px;}
+      #sec3 .art3{width: 98%;height: 200px;}
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <main id="main">
+      <header></header>
+      <nav></nav>
+      <section id="sec1">
+        <article class="art1"></article>
+        <article class="art2"></article>
+        <article class="art3"></article>
+      </section>
+      <section id="sec2">
+        <article class="art2-1"></article>
+        <article class="art2-2"></article>
+        <article class="art2-3"></article>
+
+      </section>
+      <section id="sec3">
+        <article class="art3"></article>
+        <article class="art3"></article>
+        <article class="art3"></article>
+        <article class="art3"></article>
+      </section>
+      <footer></footer>
+    </main>
+  </div>
+  
+</body>
+</html>

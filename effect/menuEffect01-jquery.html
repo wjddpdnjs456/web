@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Effect01 - jquery</title>
+  <style>
+    /* @font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+    @font-face {
+      font-family: 'Eulyoo1945-SemiBold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    :root {
+      font-size: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url(../effect/img/img_h05.png) no-repeat center center;
+      background-size: cover;
+      background-color: blueviolet;
+      background-blend-mode: inherit;
+      height: 100vh;
+      position: relative;
+      font-size: 16px;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: rgba(28, 39, 41, 0.5);
+      z-index: -1;
+    }
+
+    /*.info*/
+    .info {
+      position: absolute;
+      color: #fff;
+      font-family: 'Eulyoo1945-SemiBold';
+    }
+
+    .info.left {
+      left: 20px;
+      top: 20px;
+    }
+
+    .info.right {
+      right: 20px;
+      top: 20px;
+    }
+
+    .info.bottom {
+      left: 20px;
+      bottom: 20px;
+    }
+
+    .info ul {}
+
+    .info li {
+      font-size: 1rem;
+      line-height: 1.4;
+      list-style: none;
+    }
+
+    .info li a {
+      text-decoration: none;
+      color: #fff;
+      border: 1px dashed #fff;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin: 3px;
+    }
+    .info li a.active{
+      background: #fff;
+      color: #000;
+    }
+    .info li a:hover{
+      border-style: solid;
+    }
+    @media(max-width:600px){
+      body{ font-size: 12px;}
+      .info.right{
+        display: none;
+    }
+    }
+
+    /*option*/
+    #tab-menu {
+      max-width: 600px;
+      background: #eaa110;
+      position: absolute;
+      left: 50%;
+      top: 20vh;
+      transform: translate(-50%);
+      border-radius: 5px;
+      font-family: 'RIDIBatang';
+    }
+
+    #tab-btn ul {
+      display: flex;
+    }
+
+    #tab-btn li {
+      flex-basis: 20%;
+      text-align: center;
+      list-style: none;
+    }
+
+    #tab-btn li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 1.5em 1.5em 1.5em 1.5em;
+      display: block;
+    }
+
+    #tab-btn li.active a {
+      border-bottom: 3px solid #2b110e;
+      color: #2b110e;
+    }
+    
+
+    #tab-cont {
+      background: #fff;
+      padding: 1.5em;
+      border-radius: 0 0 5px 5px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    #tab-cont>div {
+      display: none;
+    }
+
+    #tab-cont>div:nth-child(1) {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="info left">
+    <h1>Tab Menu Effect01 - jQuery</h1>
+    <p></p>
+  </div>
+
+  <nav class="info right">
+    <ul>
+      <li><a class="active" href="menuEffect01-jquery.html">1</a> <a href="menuEffect01-javascript.html">1</a></li>
+      <li><a href="menuEffect02-jquery.html">2</a> <a href="menuEffect02-javascript.html">2</a></li>
+      <li><a href="menuEffect03-jquery.html">3</a> <a href="menuEffect03-javascript.html">3</a></li>
+      <li><a href="menuEffect04-jquery.html">4</a> <a href="menuEffect04-javascript.html">4</a></li>
+      <li><a href="menuEffect05-jquery.html">5</a> <a href="menuEffect05-javascript.html">5</a></li>
+      <li><a href="menuEffect06-jquery.html">6</a> <a href="menuEffect06-javascript.html">6</a></li>
+      <li><a href="menuEffect07-jquery.html">7</a> <a href="menuEffect07-javascript.html">7</a></li>
+      <li><a href="menuEffect08-jquery.html">8</a> <a href="menuEffect08-javascript.html">8</a></li>
+      <li><a href="menuEffect09-jquery.html">9</a> <a href="menuEffect09-javascript.html">9</a></li>
+      <li><a href="menuEffect10-jquery.html">10</a> <a href="menuEffect10-javascript.html">10</a></li>
+    </ul>
+  </nav>
+
+
+
+  <!--contents-->
+  <section class="contents">
+    <div id="tab-menu">
+      <div id="tab-btn">
+        <ul>
+          <li class="active"><a herf="#">tab1</a></li>
+          <li><a herf="#">tab2</a></li>
+          <li><a herf="#">tab3</a></li>
+          <li><a herf="#">tab4</a></li>
+          <li><a herf="#">tab5</a></li>
+        </ul>
+      </div>
+      <div id="tab-cont">
+
+        <div>1.'중고나라'에 아들과 딸을 판다는 글을 작성한 일당이 경찰에 붙잡혔습니다.
+          경북경찰청은 오늘(29일) 중고거래 커뮤니티에 '아들·딸 팝니다'는 허위 글을 올린 혐의(협박·정보통신망법상 명예훼손 등)로 A(25)씨 등 5명을 구속했습니다.
+          또 다른 공범 1명은 이미 다른 혐의로 구속된 피의자입니다.
+        </div>
+        <div>
+          2.B씨는 경찰조사에서 "일당에게서 지게차를 사려다가 사기 행각을 벌인다고 판단해 거래하지 않고, 이들이 올리는 게시글에 '사기일지 모르니 조심하세요'라는 댓글을 달았다"고 진술했습니다.
+        </div>
+        <div>
+          3.일당은 B씨에게 보복하려고 B씨 휴대전화 번호와 자녀 사진을 게재하며 '자녀 판매글'을 남긴 것으로 조사됐습니다.
+        </div>
+        <div>
+          4.경찰은 또 이들이 지난해 8월 5일부터 지난 2월까지 해당 사이트에 지게차, 굴삭기, 컨테이너, 안마의자 등을 판매한다는 허위 글을 게시해 피해자 47명으로부터 3억2천여만 원을 편취한
+          혐의(사기)도 확인했습니다.
+        </div>
+        <div>
+          5.이재욱 경북경찰청 사이버수사과장은 "여죄를 수사한 뒤 송치할 방침"이라고 말했습니다.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//contents-->
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+      const tabBtn = $("#tab-btn > ul > li");
+      const tabCont = $("#tab-cont > div");
+      tabBtn.click(function(){
+          let target = $(this);
+          let index = target.index();
+          tabBtn.removeClass("active");
+          target.addClass("active");
+          tabCont.css
+          ("display", "none");
+          tabCont.eq(index).css("display", "block");
+      });
+  </script>
+  <!-- //script -->
+</body>
+</html>

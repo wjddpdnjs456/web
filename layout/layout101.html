@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+        }
+
+        /*헤더*/
+        #header {
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .had-container {
+            margin: 0 auto;
+            display: flex;
+            width: 1600px;
+            height: 100px;
+            justify-content: space-between;
+            padding: 40px;
+
+        }
+
+        .logo {
+            text-transform: uppercase;
+        }
+
+        .had-container li {
+            display: inline;
+            margin: 11px;
+            font-size: 18px;
+            color: rgba(0, 0, 0, .6);
+        }
+
+        .had-container .logoin {
+            height: 25px;
+            padding: 5px 10px;
+            border: 1px solid rgba(0, 0, 0, .3);
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 25px;
+            color: rgba(0, 0, 0, .3);
+        }
+
+        /*//헤더*/
+        #consulting {
+            width: 100%;
+            height: 400px;
+            background: #7e96ff;
+            padding: 100px;
+
+        }
+
+        #consulting>.sub {
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+
+        }
+
+        #consulting h1 {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        #consulting .text {
+            color: #fff;
+            font-size: 20px;
+            line-height: 35px;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #consulting .btn {
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 40px;
+            background: #fff;
+            color: #7e96ff;
+            font-weight: bold;
+            margin: 0 auto;
+
+        }
+
+        /*//컨설팅*/
+
+        #section {
+            width: 100%;
+            height: 500px;
+            padding: 100px;
+            background: #f1f3ff;
+        }
+
+        .sec-box {
+            position: relative;
+        }
+        
+        .box1 {
+            position: absolute;
+            right: 450px; top: 0px;
+            width: 450px;
+            height: 100px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+        .box2 {
+            position: absolute;
+            right: 450px; top: 150px;
+            width: 450px;
+            height: 100px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+        .box3 {
+            position: absolute;
+            right: 450px; top: 300px;
+            width: 450px;
+            height: 100px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+        .img {
+            width: 500px;
+            height: 500px;
+            background: url(../layout/img/image\ 15.png) no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: -100px; left: 400px;
+        }
+        .sec-box p {
+            position: relative;
+            z-index: 1;
+        }
+        .sec-box p strong {
+            
+        }
+        .sec-box p strong::after {
+            content: '';
+            top: 35px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #cbd4ff;
+            position: absolute;
+            z-index: -1;
+        }
+        .sec-box a {
+            font-weight: bold;
+            color: blue;
+        }
+       
+
+        /*//컨설팅*/
+
+        #footer {
+            width: 100%;
+            height: 300px;
+            background: #000;
+        }
+
+        .fot-container {
+            padding: 30px;
+        }
+
+        .top {
+            text-align: center;
+            font-size: 15px;
+            color: rgb(129, 129, 129);
+            margin-bottom: 30px;
+        }
+
+        .fot-login {
+            height: 30px;
+            width: 90px;
+            margin: 0 auto;
+            text-align: center;
+            color: #ccc;
+            background: rgb(129, 129, 129);
+            border-radius: 6px;
+            line-height: 30px;
+        }
+
+        .copy {
+            font-size: 15px;
+            color: rgb(129, 129, 129);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .copy strong {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="had-container">
+                <div class="logo">naver<br>influencer</div>
+                <div class="link">
+                    <ul>
+                        <li><a href="#">인플루언서 안내</a></li>
+                        <li><a href="#">광고수익 혜택</a></li>
+                        <li><a href="#">성장 지원 프로그램</a></li>
+                        <li><a href="#">브랜드커넥트</a></li>
+                        <li><a href="#">공지</a></li>
+                    </ul>
+                </div>
+                <div class="logoin"><a href="#">인플루언서로 로그인</a></div>
+            </div>
+        </div>
+        <!--//헤더-->
+
+        <div id="consulting">
+            <div class="sub">엑스퍼트 컨설팅</div>
+            <h1>법률,세무부터, 동영상 제작까지!<br>지식iN 엑스퍼트 상담, 클래스 이용을 지원합니다.</h1>
+            <div class="text">혼자서는 해결하기 어려웠던 문제들,<br>1인 최대 10만원의 엑스퍼트 쿠폰으로 전문가의 도움을 받아보세요.</div>
+            <div class="btn">내 eXpert 쿠폰 확인하기</div>
+        </div>
+        <!--//컨설팅-->
+
+        <div id="section">
+            <div class="sec-container">
+                <div class="sec-box">
+                    <div class="img"></div>
+                    <div class="box1">
+                        <p>이 이미지 쓰고싶은데<br><strong>저작권에 문제 없을까요?</strong></p>
+                        <a href="#">법률 상담 받기 ></a> 
+                    </div>
+                    <div class="box2">
+                        <p>광고 수익에 대한 세금 신고<br><strong>꼭 해야하나요? 어떻게 하죠?</strong></p>
+                        <a href="#">세무상담 받기 ></a>
+                    </div>
+                    <div class="box3">
+                        <p>영상 콘텐츠 만들고싶은데,<br><strong>동영상 제작을 배우고싶어요!</strong></p>
+                        <a href="#">동영상 제작 상담 ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//섹션-->
+
+    <div id="footer">
+        <div class="fot-container">
+            <div class="top">TOP</div>
+            <div class="fot-login">로그인</div>
+            <div class="copy">naver copyright Copy All right reserved<br><strong>NAVER</strong></div>
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
