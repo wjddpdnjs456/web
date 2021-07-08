@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirusBlooming</title>
+     <!--css-->
+     <link rel="stylesheet" href="port.css"/>
+
+</head>
+<body>
+    <div class="scroll">0</div>
+    <div id="wrap">
+        <div class="container">
+            <div class="b_background fixed">
+                <div class="text_container">
+                    <div class="name fixed">YeWon</div> 
+                    <div class="portfolio fixed">2021 portfolio</div> 
+                    <div class="title fixed">VIRUS<br>
+                        BLOOMING</div> 
+                    <div class="adress fixed">Pattern design I drew myself</div> 
+                    <div class="button fixed"><a href="./page1.html">Enter</a></div> 
+                </div>
+                <div class="b_object1"></div>
+                <div class="b_object2"></div>
+                <div class="b_object3"></div>
+                <div class="b_object4"></div>
+                <div class="b_object5"></div>
+                <div class="b_object6"></div>
+                <div class="b_object7"></div>
+                <div class="b_object10"></div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+
+        window.addEventListener("scroll", function(){
+            let scroll = document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+
+            document.querySelector(".scroll").innerText = parseInt(scroll);
+        })
+    </script>
+
+    
+</body>
+</html>

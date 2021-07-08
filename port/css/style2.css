@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Miracle";
+  src: url(http://jinmopin.dothome.co.kr/port/assets/fonts/Miracle_Personal_use.woff);
+}
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Cormorant+SC:wght@300;400;500;600;700&family=Croissant+One&family=Harmattan:wght@400;700&family=Italiana&family=Julius+Sans+One&family=Playfair+Display&display=swap");
+
+@font-face {
+  font-family: "IBMPlexSansKR-Text";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* layout */
+#contents {
+}
+#section1 {
+  height: 100vh;
+  width: 100%;
+}
+#section2 {
+}
+#section3 {
+}
+#section4 {
+}
+#section5 {
+}
+#section6 {
+}
+
+.fixed {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* sec1 */
+.sec1 {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/virus-background3.jpg);
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.mtext {
+}
+.mtext h1 {
+  font-size: 9vw;
+  line-height: 0.9;
+  color: #fff;
+  text-align: center;
+  font-family: "Italiana", serif;
+  z-index: 2000;
+}
+.object1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object4 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object6 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object7 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+.object8 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}

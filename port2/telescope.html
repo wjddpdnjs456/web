@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sea</title>
+</head>
+ <!--css-->
+ <link rel="stylesheet" href="./css/tele.css" />
+ <link rel="stylesheet" href="./css/reset1.css" />
+<body>
+    <div id="tele_wrap">
+        <div class="tele_container">
+            <div class="boat">
+                <img src="./img/teleBoat.svg" alt="보트">
+            </div>
+            <div class="light">
+                <img src="./img/telelight.svg" alt="불빛">
+            </div>
+            <div class="glass">
+                <img src="./img/teleGlass.svg" alt="잔디">
+            </div>
+            <div class="cloud">
+                <img src="./img/telecloud.svg" alt="구름">
+            </div>
+            <div class="bird">
+                <img src="./img/teleBird.svg" alt="갈매기">
+            </div>
+            <div class="tele_telescope">
+                <img src="./img/teleBlack.svg" alt="망원경">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+        //망원경 마우스 효과
+        const leaves = document.querySelector(".telescope");
+
+        const mouseMove = e => {
+            const { x, y }  = e;
+            const rect = leaves.getBoundingClientRect();
+            const mouseX = (x - rect.left - rect.width/2) / rect.width * 20
+            const mouseY = (y - rect.top - rect.height/2) / rect.height * 20
+
+            gsap.to(".telescope", {duration: 0.1, x : mouseX * 2, y: mouseY * 2})
+        }
+
+        window.addEventListener("mousemove", mouseMove);
+    </script>
+    </script>
+</body>
+
+</html>

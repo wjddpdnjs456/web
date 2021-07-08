@@ -1,0 +1,1894 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* character */
+
+
+/*공통*/
+.scroll {
+    font-family: 'Cafe24Ssurround';
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    background: rgba(0, 0, 0.5);
+    z-index: 10000;
+}
+
+.fixed {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*section1*/
+.sec1 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #295A7A;
+}
+
+.glass {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 1900px;
+    height: 30vh;
+}
+
+.start {
+    font-family: 'Abel', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 500px;
+}
+
+.star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 200px;
+}
+
+.Bmount {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.Lmount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+}
+
+.Rmount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 800px;
+}
+
+.house {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    height: 400px;
+}
+
+.girl1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.Bgirl1 {
+    position: absolute;
+    top: 64%;
+    left: 41.7%;
+    width: 123.5px;
+    height: 174px;
+    z-index: 10000;
+    background: url(../img/walking2.png);
+    background-size: 1250px;
+    animation: Bgirl1walk 0.6s steps(10, start) infinite;
+}
+@keyframes Bgirl1walk {
+    0% {background-position: 0 0;}
+    100% {background-position: -1250px 0;}
+}
+
+
+/*section2*/
+.sec2 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.whowas {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.Bgirl2 {
+    z-index: 100;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 280px;
+    height: 420px;
+    z-index: 10000;
+    background: url(../img/walking2.png);
+    background-size: 2800px;
+    animation: Bgirl2walk 1s steps(10, start) infinite;
+}
+@keyframes Bgirl2walk {
+    0% {background-position: 0 0;}
+    100% {background-position: -2800px 0;}
+}
+
+.window {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.door {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.787);
+    border-radius: 50%;
+    z-index: 1000;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.cursor-follower {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 253, 231, 0.685);
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.cursor-follower.active {
+    background: rgba(170, 231, 255, 0.966);
+    opacity: .7;
+    transform: scale(130);
+}
+
+.contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 150px;
+    z-index: 100;
+    background: url(../img/whowasdash.svg) no-repeat;
+}
+.contents:hover{
+    background: url(../img/Wwhowas.svg) no-repeat;
+}
+.mouse{
+    z-index: 100;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    width: 50px;
+    height: 30px;
+    background: url(../img/mouse.svg) no-repeat;
+    animation: mouse 3s infinite;
+}
+@keyframes mouse {
+    0%{ transform: translate(-40%,-40%);}
+    50%{ transform: translate(-70%,50%);}
+    100%{ transform: translate(-40%,-40%);}
+}
+
+/*section3*/
+.sec3 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #295A7A;
+}
+
+.sec3glass {
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    width: 1000px;
+    height: 500px;
+}
+
+.sec3Bmount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2000px;
+    height: 1000px;
+}
+
+.sec3Lmount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.sec3house {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 900px;
+}
+
+.sec3forest {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 900px;
+}
+
+.bridge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+}
+
+.Bgirl3{
+    position: absolute;
+    top: 53.5%;
+    left: 50%;
+    width: 70px;
+    height: 105px;
+    z-index: 10000;
+    background: url(../img/walking2.png);
+    background-size: 700px;
+    animation: Bgirl3walk 0.6s steps(10, start) infinite;
+}
+@keyframes Bgirl3walk {
+    0% {background-position: 0 0;}
+    100% {background-position: -700px 0;}
+}
+
+
+.javaTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background:url(../img/javafigDash.svg)no-repeat;
+}
+.javaTxt:hover{
+    background: url(../img/javafig.svg) no-repeat;
+}
+.htmlTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: url(../img/htmlfigDash.svg)no-repeat;
+}
+.htmlTxt:hover{
+    background: url(../img/htmlfig.svg)no-repeat;
+}
+.cssTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background:  url(../img/cssfigDash.svg)no-repeat;
+}
+.cssTxt:hover{
+    background:url(../img/cssfig.svg) no-repeat;
+}
+.jqueryTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: url(../img/jqueryfigDash.svg) no-repeat;
+}
+.jqueryTxt:hover{
+    background: url(../img/jQueryfig.svg) no-repeat;
+}
+
+/*section4*/
+.sec4 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #295A7A;
+}
+
+.Btree {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 1900px;
+    height: 100vh;
+}
+
+.Ltree {
+    position: absolute;
+    bottom: 5%;
+    left: -5%;
+    width: 900px;
+    height: 100vh;
+}
+
+.Ftree {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 1520px;
+    height: 100vh;
+}
+
+.bird {
+    position: absolute;
+    top: 200px;
+    right: 650px;
+    width: 80px;
+    height: 80px;
+}
+
+.birdtxt {
+    position: absolute;
+    top: 18%;
+    right: 40%;
+    width: 200px;
+    height: 200px;
+}
+
+.Bgirl4 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 200px;
+    height: 300px;
+    z-index: 10000;
+    background: url(../img/walking2.png);
+    background-size: 2000px;
+    animation: Bgirl4walk 0.6s steps(10, start) infinite;
+}
+@keyframes Bgirl4walk {
+    0% {background-position: 0 0;}
+    100% {background-position: -2000px 0;}
+}
+
+
+.girltxt {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100px;
+    height: 100px;
+}
+
+.egg {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background: url(../img/egg.svg) no-repeat center;
+    background-size: 60px;
+    animation: egg 0.8s infinite linear;
+}
+
+@keyframes egg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.egg:hover {
+    animation: none;
+    background: url(../img/breakEgg.svg) no-repeat center;
+}
+
+
+/*section5*/
+.sec5 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #295A7A;
+}
+
+.secBmount {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 1500px;
+    height: 300px;
+}
+
+.sec5Btree {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 1500px;
+    height: 100vh;
+}
+
+.sec5Rtree {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 1500px;
+    height: 100vh;
+}
+
+.sec5Ftree {
+    position: absolute;
+    bottom: 9%;
+    right: 2%;
+    width: 1900px;
+    height: 100vh;
+}
+
+.daram {
+    position: absolute;
+    bottom: 10%;
+    right: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.daramtxt {
+    position: absolute;
+    bottom: 200px;
+    right: 330px;
+    width: 200px;
+    height: 200px;
+}
+
+
+/*section6*/
+.sec6 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.sec6LBcave {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100vh;
+}
+
+.sec6RBcave {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 30%;
+    height: 100vh;
+}
+
+.sec6Lcave {
+    position: absolute;
+    top: 0%;
+    left: 8%;
+    width: 50%;
+    height: 100vh;
+}
+
+.sec6Rcave {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    width: 30%;
+    height: 100vh;
+}
+
+.sec6Bgirl {
+    position: absolute;
+    top: -10%;
+    right: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.cursor-follower6 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 253, 231, 0.685);
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.cursor-follower6.active {
+    background: rgba(248, 246, 112, 0.966);
+    opacity: .7;
+    transform: scale(70);
+}
+
+
+/*section7*/
+.sec7 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.sec7Bcave {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1900px;
+}
+
+.Boo {
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    width: 200px;
+    height: 200px;
+    background: url(../img/gostTxtDash.svg)no-repeat;
+}
+.Boo:hover{
+    background: url(../img/ghostTxt.svg)no-repeat;
+}
+
+.boom {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 400px;
+    height: 400px;
+}
+
+.sec7cave {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1900px;
+}
+
+.sec7Bgirl {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    width: 100px;
+    height: 100px;
+}
+
+.sec7Ggirl {
+    position: absolute;
+    bottom: -3%;
+    left: 20%;
+    width: 160px;
+    height: 240px;
+    background: url(../img/Gwalking.png);
+    background-size: 1600px;
+    animation: Ggirlwalk 0.6s steps(10, start) infinite;
+}
+@keyframes Ggirlwalk {
+    0% {background-position: 0 0;}
+    100% {background-position: -1600px 0;}
+}
+
+.ghost {
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    width: 30vw;
+    height: 30vh;
+}
+
+/*section8*/
+.sec8 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #295A7A;
+}
+
+.sec8mousebox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: url(../img/sec8mouseDash.svg) no-repeat;
+}
+.sec8mousebox:hover{
+    background: url(../img/sec8mouse.svg) no-repeat;
+}
+
+.sec8-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #96B9BC;
+}
+
+.sec8Btree {
+    position: absolute;
+    bottom: 22%;
+    width: 100%;
+}
+
+.sec8Bmount {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+    width: 100%;
+}
+
+.sec8water {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 1900px;
+}
+
+.sec8Fmount {
+    position: absolute;
+    bottom: -5%;
+    left: -2%;
+    width: 2000px;
+}
+
+.sec8cave {
+    position: absolute;
+    bottom: 260px;
+    left: 0%;
+    width: 220px;
+}
+
+.sec8bridge {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 1850px;
+}
+
+.light {
+    position: absolute;
+    top: 21%;
+    right: 10%;
+    width: 650px;
+}
+
+.sec8lighthouse {
+    position: absolute;
+    bottom: 80%;
+    right: 2%;
+    width: 220px;
+    height: 100px;
+}
+
+.sec8Bgirl {
+    position: absolute;
+    bottom: 255px;
+    left: 0%;
+    width: 40px;
+    height: 60px;
+    background: url(../img/walking2.png);
+    background-size: 400px;
+    animation: Bgirl8 0.6s steps(10, start) infinite;
+}
+@keyframes Bgirl8 {
+    0% {background-position: 0 0;}
+    100% {background-position: -400px 0;}
+}
+
+.whitelight {
+    position: absolute;
+    top: 21%;
+    right: 10%;
+    width: 650px;
+}
+
+/*section9*/
+.sec9 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #96B9BC;
+}
+
+.lightmoon {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 30vw;
+    height: 30vh;
+}
+
+.sec9Bmount {
+    position: absolute;
+    top: 51%;
+    right: 0%;
+    width: 70vw;
+    height: 50vh;
+}
+
+.sec9Fmount {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 60vw;
+    height: 50vh;
+}
+
+.sec9water {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100vw;
+}
+
+.sec9glass {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100vw;
+}
+
+.sec9cloud {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20vw;
+    height: 50vh;
+}
+
+.sec9cloud2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 40vw;
+    height: 50vh;
+}
+
+.sec9girl {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 5vw;
+    height: 10vh;
+
+}
+
+.galme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5vw;
+    height: 10vh;
+}
+
+.octoTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8vw;
+    height: 10vh;
+}
+
+
+
+/*section10*/
+.sec10 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #96B9BC;
+}
+
+.sec10-2 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #DEEEEB;
+}
+
+.sun {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 25vw;
+    height: 10vh;
+}
+
+.lightcloud {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 8vh;
+}
+
+.lightcloud2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20vw;
+    height: 8vh;
+}
+
+.lightcloud3 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20vw;
+    height: 8vh;
+}
+
+.boat {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 20vw;
+    height: 7vh;
+    animation: boat 5s infinite linear;
+}
+
+@keyframes boat {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(5deg);
+    }
+
+    63% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.water {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 105%;
+}
+
+.rock {
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    width: 80vw;
+    height: 1vh;
+}
+
+.vilige {
+    position: absolute;
+    bottom: 77%;
+    right: 0%;
+    width: 80vw;
+    height: 1vh;
+}
+
+.vilReflection {
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    width: 80vw;
+    height: 8vh;
+}
+
+.Bgilr {
+    position: absolute;
+    bottom: 33.5%;
+    left: 20%;
+    width: 48px;
+    height: 60px;
+}
+
+.Cgirl {
+    position: absolute;
+    bottom: 27.5%;
+    left: 20%;
+    width: 90px;
+    height: 135px;
+    background: url(../img/Cwalking.png);
+    background-size: 900px;
+    animation: Cgirl 0.6s steps(10, start) infinite;
+}
+@keyframes Cgirl {
+    0% {background-position: 0 0;}
+    100% {background-position: -900px 0;}
+}
+
+.megaTxt {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 6vw;
+    height: 6vh;
+    background: url(../img/megaTxt.svg) no-repeat;
+}
+.megaTxt:hover{
+    background: url(../img/megaDash.svg)no-repeat;
+}
+
+.webTxt {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 8vw;
+    height: 8vh;
+    background: url(../img/webTxt.svg)no-repeat;
+}
+.webTxt:hover{
+    background: url(../img/webDash.svg)no-repeat;
+}
+
+.naver {
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    width: 8vw;
+    height: 8vh;
+    background: url(../img/naverTxt.svg)no-repeat;
+}
+.naver:hover{
+    background: url(../img/naver.Dash.svg)no-repeat;
+}
+
+/*//section10*/
+
+.sec11 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #DEEEEB;
+}
+
+.balloonRe {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.rock2 {
+    position: absolute;
+    top: 70%;
+    right: 0%;
+    width: 102vw;
+    height: 1vh;
+}
+
+.Cgirl2 {
+    position: absolute;
+    bottom: 27.5%;
+    left: 0%;
+    width: 90px;
+    height: 135px;
+    background: url(../img/Cwalking.png);
+    background-size: 900px;
+    animation: Cgirl2 1s steps(10, start) infinite;
+}
+@keyframes Cgirl2 {
+    0% {background-position: 0 0;}
+    100% {background-position: -900px 0;}
+}
+
+.sec11mount {
+    position: absolute;
+    bottom: 75%;
+    right: 20%;
+    width: 60vw;
+    height: 2vh;
+}
+
+.sec11house {
+    position: absolute;
+    bottom: 70%;
+    right: 38%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.leaves {
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    width: 80vw;
+    height: 2vh;
+    animation: leaves 0.5s infinite linear;
+}
+
+@keyframes leaves {
+    0% {
+        transform: translate(-0%, -0%)
+    }
+
+    20% {
+        transform: translate(-0%, -30%)
+    }
+
+    40% {
+        transform: translate(-0%, -35%)
+    }
+
+    80% {
+        transform: translate(-0%, -30%)
+    }
+
+    100% {
+        transform: translate(-0%, -0%)
+    }
+}
+
+.ladder {
+    position: absolute;
+    bottom: 45%;
+    right: 38%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.balloon {
+    position: absolute;
+    bottom: 95%;
+    right: 25%;
+    width: 20vw;
+    height: 2vh;
+    animation: balloon 7s infinite linear;
+}
+
+@keyframes balloon {
+    0% {
+        transform: translate(-0%, -0%) rotate(0deg)
+    }
+
+    20% {
+        transform: translate(-0%, -100%) rotate(5deg)
+    }
+
+    40% {
+        transform: translate(-0%, -100%) rotate(0deg)
+    }
+
+    80% {
+        transform: translate(-0%, -100%) rotate(-5deg)
+    }
+
+    100% {
+        transform: translate(-0%, -0%) rotate(0deg)
+    }
+}
+
+.balloonGirl {
+    position: absolute;
+    top: 0%;
+    right: 25%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.Lcloud {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.Lcloud2 {
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.Lcloud3 {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 20vw;
+    height: 2vh;
+}
+
+/*section12*/
+.sec12 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #DEEEEB;
+}
+
+.sec12balloonGirl {
+    position: absolute;
+    bottom: 100%;
+    left: 60%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.sec12Lcloud {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 40vw;
+    height: 2vh;
+}
+
+.sec12Lcloud2 {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    width: 30vw;
+    height: 2vh;
+}
+
+.sec12Lcloud3 {
+    position: absolute;
+    bottom: 40%;
+    right: 0%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.sec12Lcloud4 {
+    position: absolute;
+    bottom: 40%;
+    right: -50%;
+    width: 50vw;
+    height: 2vh;
+}
+
+.sec12Lcloud5 {
+    position: absolute;
+    top: 0%;
+    right: -50%;
+    width: 20vw;
+    height: 2vh;
+}
+
+.sec12Lcloud6 {
+    position: absolute;
+    top: 20%;
+    right: -50%;
+    width: 30vw;
+    height: 2vh;
+}
+
+.sec12Lcloud7 {
+    position: absolute;
+    top: 60%;
+    right: -80%;
+    width: 30vw;
+    height: 2vh;
+}
+
+.sec12Lcloud8 {
+    position: absolute;
+    top: 0%;
+    right: -100%;
+    width: 60vw;
+    height: 2vh;
+}
+
+.sec11sun {
+    position: absolute;
+    top: -20%;
+    right: 20%;
+    width: 40vw;
+    height: 10vh;
+}
+
+.telescope {
+    position: absolute;
+    bottom: 47%;
+    left: 45%;
+    width: 4vw;
+    height: 5vh;
+    background: url(../img/telescopeDash.svg) no-repeat;
+}
+
+.telescope:hover {
+    position: absolute;
+    bottom: 47%;
+    left: 45%;
+    width: 4vw;
+    height: 5vh;
+    background: url(../img/telescope.svg) no-repeat;
+}
+
+/*section13*/
+.sec13 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #CAEFE4;
+}
+
+.lastCloud1 {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 20vw;
+    height: 10vh;
+}
+
+.lastCloud2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 30vw;
+    height: 10vh;
+}
+
+.lastBmount {
+    position: absolute;
+    bottom: 30%;
+    left: 25%;
+    width: 50vw;
+    height: 10vh;
+}
+
+.lastLmount {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 50vw;
+    height: 100vh;
+}
+
+.lastRmount {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 50vw;
+    height: 100vh;
+}
+
+.lastGlass {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100vw;
+    height: 30vh;
+}
+
+.lastHouse {
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+    width: 30vw;
+    height: 10vh;
+}
+
+.lastSun {
+    position: absolute;
+    top: 35%;
+    right: 40%;
+    width: 20vw;
+    height: 40vh;
+}
+
+.lastSunlight {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    width: 50vw;
+    height: 100vh;
+}
+
+.lastballoon {
+    position: absolute;
+    top: -10%;
+    right: 25%;
+    width: 25vw;
+    height: 25vh;
+}
+
+.lastCgirl {
+    position: absolute;
+    top: 44%;
+    right: 25%;
+    width: 2vw;
+    height: 30vh;
+}
+
+.lastbird {
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    width: 4vw;
+    height: 40vh;
+}
+
+.colorBtxt {
+    position: absolute;
+    top: 15%;
+    right: 42%;
+    width: 10vw;
+    height: 40vh;
+}
+
+.Cgirltxt {
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    width: 5vw;
+    height: 40vh;
+}
+
+/*section14*/
+.sec14 {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.endStar {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 100vw;
+    height: 20vh;
+}
+
+.endImg {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 70vw;
+    height: 20vh;
+}
+
+.endTxt {
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+    width: 25vw;
+    height: 20vh;
+}
+
+
+/*카드게임*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardGame {
+    position: fixed;
+    left: 0;
+    top: -103%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardGame .close {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    background: url(../cardimg/X.svg) no-repeat center;
+    background-size: 40%;
+    border: none;
+    right: 40px;
+    top: 40px;
+}
+
+.ca_title {
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 50px;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+.ca_title h1 {
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 40px;
+    font-family: 'Cafe24Ssurround';
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid rgb(207, 207, 207);
+    background: #dfe0e0;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #000;
+    width: 8vw;
+    height: 20vh;
+    border-radius: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: all 0.6s;
+}
+
+.card>div {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.card .front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(0deg);
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+
+/* 카드를 클릭할 때 */
+.card.is-selected,
+[data-matched=true] {
+    transform: translate3d(0, 0, 0) rotateY(-180deg);
+}
+
+/* 카드가 일치할 때 */
+[data-matched=true] {
+    animation: matchSuccess 0.4s ease-out 3;
+}
+
+@keyframes matchSuccess {
+    0% {
+        transform: rotateY(180deg) scale(1);
+    }
+
+    50% {
+        transform: rotateY(180deg) scale(1.05);
+    }
+
+    100% {
+        transform: rotateY(180deg) scale(1);
+    }
+}
+
+/* 카드 이미지 */
+
+.card .front {
+    background: url(../cardimg/Boo.svg) no-repeat center;
+    background-size: 110px;
+}
+
+[data-type=img1] .back {
+    background-image: url(../cardimg/bo1.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img2] .back {
+    background-image: url(../cardimg/bo2.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img3] .back {
+    background-image: url(../cardimg/bo3.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img4] .back {
+    background-image: url(../cardimg/bo4.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img5] .back {
+    background-image: url(../cardimg/bo5.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img6] .back {
+    background-image: url(../cardimg/bo6.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img7] .back {
+    background-image: url(../cardimg/bo7.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img8] .back {
+    background-image: url(../cardimg/bo8.svg);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+[data-type=img9] .back {
+    background-image: url(../cardimg/bo9.svg);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+.audio {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.audio .btn-sound {
+    width: 24px;
+    height: 24px;
+    background: #000;
+    border: 0;
+    background: url(./audio/icon-sound-on\ \(1\).svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.audio .btn-sound:active {
+    transform: translateY(1px);
+}
+
+.audio .btn-sound::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 120%;
+    height: 2px;
+    background: #000;
+    transform: rotate(35deg);
+}
+
+.audio .btn-sound.is-playing::before {
+    display: none;
+}
+
+.score {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.score.turn span.last-turn {
+    color: red;
+}
+
+/* success */
+.success {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.success h2 {
+    font-size: 6vw;
+    font-family: 'Cafe24Ssurround';
+    color: #fff;
+    text-align: center;
+    padding: 10%;
+}
+
+.success.is-visible {
+    display: flex;
+}
+
+.success .btn-continue {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    font-family: 'Cafe24SsurroundAir';
+    border-width: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.success .btn-continue:hover {
+    transform: rotate(-35deg);
+}
+
+.success .core {
+    color: #fff;
+    font-family: 'Cafe24SsurroundAir';
+    padding-bottom: 1%;
+}
+
+
+.character {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: 200px;
+    height: 300px;
+    background: #fff;
+    z-index: 10000;
+    background:  url(../img/walking2.png);
+    background-size: 2000px;
+    animation: walk 0.5s steps(10, start) infinite;
+}
+@keyframes walk {
+    0% {background-position: 0 0;}
+    100% {background-position: -2000px 0;}
+}
+
+/*망원경*/
+.tele_container{
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: -103%;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/seaBack.svg) no-repeat center center;
+    background-size: cover;
+}
+.tele_boat{
+    position: absolute;
+    top: 44%;
+    right: 45%;
+    width: 4%;
+    height: 5%;
+    animation: tele_boat 3s infinite;
+}
+@keyframes tele_boat {
+    0%{transform: rotate(0deg);}
+    33%{transform: rotate(-4deg);}
+    66%{transform: rotate(4deg);}
+    100%{transform: rotate(0deg);}
+}
+.tele_light{
+    position: absolute;
+    top: 23%;
+    right: 12%;
+    width: 10%;
+    height: 5%;
+    animation: tele_light 5s infinite;
+}
+@keyframes tele_light {
+    0%{transform: translate(0,0); }
+    50%{transform: translate(-20px,0);}
+    100%{transform: translate(0,0);}
+}
+.tele_glass{
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    width: 30%;
+    height: 5%;
+    animation: tele_glass 0.8s infinite;
+}
+@keyframes tele_glass {
+    0%{transform: translate(0,0); }
+    50%{transform: translate(0,2px);}
+    100%{transform: translate(0,0);}
+}
+.tele_cloud{
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    width: 60%;
+    height: 5%;
+    animation: tele_cloud 20s infinite;
+}
+@keyframes tele_cloud {
+    0%{transform: translate(0,0); }
+    50%{transform: translate(-60px,0);}
+    100%{transform: translate(0,0);}
+}
+.tele_bird{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 6%;
+    height: 5%;
+    animation: tele_bird 50s infinite;
+}
+@keyframes tele_bird {
+    0%{transform: translate(0,0) scale(1); }
+    50%{transform: translate(-500px,0) scale(2);}
+    100%{transform: translate(0,0) scale(1);}
+}
+.tele_telescope{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+}
+.tele_close{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+    background: url(../cardimg/X.svg) no-repeat center;
+    background-size: 40%;
+    border: none;
+    right: 40px;
+    top: 40px;
+}

@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Cormorant+SC:wght@300;400;500;600;700&family=Croissant+One&family=Harmattan:wght@400;700&family=Italiana&family=Julius+Sans+One&family=Playfair+Display&display=swap');
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Text';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+}
+.scroll{
+   position: fixed;
+   left: 10px; top: 10px;
+   width: 50px; height: 50px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 50px;
+   color: #fff;
+   background: rgba(0,0,0.5);
+   z-index: 10000;
+}
+/* blooming */
+#wrap{
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+}
+.b_background{
+    width: 100%;
+    height: 100vh;
+    background:url(../port/img/virus-background.jpg) no-repeat center center;
+}
+
+ .b_object1{
+     position: absolute;
+     top: 300px;
+     right: -100px;
+     width: 600px;
+     height: 600px;
+     background: url(../port/img/object1.png) no-repeat;
+ }
+ .b_object2{
+     position: absolute;
+     top: 600px;
+     right: 200px;
+     width: 400px;
+     height: 400px;
+     background: url(../port/img/object2.png) no-repeat;
+ }
+ .b_object3{
+    position: absolute;
+    top: -100px;
+    right: -500px;
+    width: 700px;
+    height: 700px;
+    background: url(../port/img/object5.png);
+ }
+ .b_object4{
+    position: absolute;
+    top: -200px;
+    right: 300px;
+    width: 400px;
+    height: 400px;
+    background: url(../port/img/object4.png);
+ }
+ .b_object5{
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/object3.png) no-repeat;
+ }
+ .b_object6{
+    position: absolute;
+    top: -150px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    background: url(../port/img/object6.png) no-repeat;
+ }
+ .b_object7{
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/object10.png) no-repeat;
+ }
+ .b_object10{
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    width: 400px;
+    height: 370px;
+    background: url(../port/img/object4.png) no-repeat;
+ }
+ .text_container{
+     position: relative;
+     z-index: 100;
+     text-align: center;
+ }
+ .name{
+   font-family: 'Julius Sans One', sans-serif;
+     padding: 20px;
+     font-size: 28px;
+     color: #fff;
+ }
+ .portfolio{
+   font-family: 'Bellota Text', cursive;
+   font-size: 30px;
+   margin-top: 200px;
+   color: #fff;
+ }
+ .title{
+   margin-top: 10px;
+   font-family: 'Italiana', serif;
+   font-size: 7vw;
+   line-height: 0.9;
+   color:#fff;
+   text-align: center;
+ }
+ .adress{
+   font-family: 'Bellota Text', cursive;
+   font-size: 24px;
+   color: #fff;
+   margin-top: 20px;
+ }
+ .button{
+   font-family: 'IBMPlexSansKR-Text';
+   /* font-family: 'Harmattan', sans-serif; */
+   margin-top: 20px;
+   font-size: 15px;
+   font-weight: bold;
+   text-decoration: none;
+   border: none;
+   background-color: #fff;
+   color: rgb(85, 153, 138);
+   font-weight: bold;
+   padding: 5px 30px;
+   border-radius: 30px;
+ }
+ /* //blooming */
+
+ /* homework */
+ .h_background{
+    width: 100%;
+    height: 100vh;
+    background:url(../port/img/vacation-background.jpg) no-repeat center center;
+}
+.h_name{
+    font-family: 'S-CoreDream-3Light';
+     padding: 20px;
+     font-size: 28px;
+     color: rgb(61, 61, 61);
+ }
+ .h_portfolio{
+    font-family: 'S-CoreDream-3Light';
+     font-size: 24px;
+     color: rgb(61, 61, 61);
+     padding-top: 150px;
+ }
+ .h_title{
+    font-family: 'HSBombaram3_Thin';
+     margin-top: 40px;
+     font-size: 150px;
+     color: rgb(61, 61, 61);
+     line-height: 130px;
+ }
+ .h_adress{
+    font-family: 'S-CoreDream-3Light';
+     margin-top: 30px;
+     font-size: 24px;
+     color: rgb(61, 61, 61);
+ }
+ .h_button{
+    font-family: 'S-CoreDream-3Light';
+    font-weight: bold;
+     font-size: 30px;
+     margin-top: 30px;
+     border-radius: 30px;
+     display: inline-block;
+     padding: 5px 40px;
+     background-color: rgb(61, 61, 61);
+     color: #fff
+ }
+ .h_object1{
+    position: absolute;
+    top: -250px;
+    right: 300px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/v_object1.png) no-repeat;
+ }
+ .h_object2{
+    position: absolute;
+    top: 200px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/v_object2.png) no-repeat;
+ }
+ .h_object3{
+    position: absolute;
+    bottom: -300px;
+    left: 200px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/v_object1.png) no-repeat;
+ }
+ .h_object4{
+    position: absolute;
+    top: 400px;
+    left: -100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/v_object3.png) no-repeat;
+ }
+ .h_object5{
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/v_object5.png) no-repeat;
+ }
+ .h_object6{
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/v_object6.png) no-repeat;
+ }
+ .h_object7{
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+    width: 1000px;
+    height: 800px;
+    background: url(../port/img/v_object4.png) no-repeat;
+ }
+ /* floating */
+ .f_background{
+    width: 100%;
+    height: 100vh;
+    background:url(../port/img/floating-background.jpg) no-repeat center center;
+ }
+ .f_button{
+    font-family: 'S-CoreDream-3Light';
+    font-weight: bold;
+     font-size: 30px;
+     margin-top: 30px;
+     border-radius: 30px;
+     display: inline-block;
+     padding: 5px 40px;
+     background-color:#fff;
+     color: #525ba6;
+ }
+ .f_object1{
+    position: absolute;
+    top: 200px;
+    right: -200px;
+    width: 800px;
+    height: 1000px;
+    background: url(../port/img/f_object1.png) no-repeat;
+ }
+ .f_object2{
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/f_object2.png) no-repeat;
+ }
+ .f_object3{
+    position: absolute;
+    bottom: -400px;
+    left: 200px;
+    width: 650px;
+    height: 600px;
+    background: url(../port/img/f_object3.png) no-repeat;
+ }
+ .f_object4{
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/f_object4.png) no-repeat;
+ }
+ .f_object5{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/f_object5.png) no-repeat;
+ }
+ .f_object6{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/f_object6.png) no-repeat;
+ }
+ /*sculpture */
+ .s_background{
+   width: 100%;
+   height: 100vh;
+   background:url(../port/img/sculpture-background2.jpg) no-repeat center center;
+}
+.s_button{
+   font-family: 'IBMPlexSansKR-Text';
+   /* font-family: 'Harmattan', sans-serif; */
+   font-size: 18px;
+   margin-top: 30px;
+   font-size: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   border: none;
+   background-color: #fff;
+   color: rgb(26, 7, 56);
+   font-weight: bold;
+   padding: 5px 30px;
+   border-radius: 30px;
+}
+.s_button:hover{
+   background-color:rgb(11, 1, 27);
+   color: #fff
+}
+.s_object1{
+   z-index: 1000;
+   position: absolute;
+    top: 150px;
+    right: -100px;
+    width: 704px;
+    height: 902px;
+    background: url(../port/img/s_object1.png) no-repeat;
+}
+.s_object2{
+   position: absolute;
+    top: 500px;
+    left: -100px;
+    width: 800px;
+    height: 800px;
+    background: url(../port/img/s_object2.png) no-repeat;
+}
+.s_object3{
+   position: absolute;
+    top: 700px;
+    left: 400px;
+    width: 400px;
+    height: 400px;
+    background: url(../port/img/s_object3.png) no-repeat;
+}
+.s_object4{
+   position: absolute;
+    top: 650px;
+    right: 400px;
+    width: 400px;
+    height: 400px;
+    background: url(../port/img/s_object4.png) no-repeat;
+}
+.s_object5{
+   z-index: 1000;
+   position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 500px;
+    height: 400px;
+    background: url(../port/img/s_object5.png) no-repeat;
+}
+.s_object6{
+   position: absolute;
+    top: -50px;
+    left: 200px;
+    width: 400px;
+    height: 300px;
+    background: url(../port/img/s_object6.png) no-repeat;
+}
+.s_object7{
+   position: absolute;
+    top: -40px;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+    background: url(../port/img/s_object7.png) no-repeat;
+}
+.s_object8{
+   position: absolute;
+    top: -100px;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    background: url(../port/img/s_object8.png) no-repeat;
+}
+.s_object9{
+   position: absolute;
+    top: 300px;
+    left: -60px;
+    width: 500px;
+    height: 500px;
+    background: url(../port/img/s_object3.png) no-repeat;
+}
+.s_object10{
+   z-index: 10000;
+   position: absolute;
+    top: 500px;
+    right: -300px;
+    width: 500px;
+    height: 500px;
+    background: url(../port/img/s_object8.png) no-repeat;
+}
+/*sculpture2 */
+.s2_background{
+   width: 100%;
+   height: 100vh;
+   background:url(../port/img/sculpture2-background.jpg) no-repeat center center;
+}
+.s2_button{
+   font-family: 'S-CoreDream-3Light';
+   font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 5px 40px;
+    background-color:#fff;
+    color: #0a0814;
+}
+.s2_object1{
+   z-index: 1000;
+   position: absolute;
+    top: 300px;
+    right: -200px;
+    width: 800px;
+    height: 800px;
+    background: url(../port/img/s2_object1.png) no-repeat;
+}
+.s2_object2{
+   z-index: 1000;
+   position: absolute;
+    top: 600px;
+    left: -200px;
+    width: 1000px;
+    height: 800px;
+    background: url(../port/img/s2_object2.png) no-repeat;
+}
+.s2_object3{
+   z-index: 1000;
+   position: absolute;
+    top: 450px;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    background: url(../port/img/s2_object3.png) no-repeat;
+}
+.s2_object4{
+   z-index: 1000;
+   position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../port/img/s2_object4.png) no-repeat;
+}
+.s2_object5{
+   z-index: 1000;
+   position: absolute;
+    bottom: -200px;
+    left: 700px;
+    width: 400px;
+    height: 400px;
+    background: url(../port/img/s2_object5.png) no-repeat;
+}
+.s2_object6{
+   z-index: 1000;
+   position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 500px;
+    height: 400px;
+    background: url(../port/img/s2_object6.png) no-repeat;
+}
+.s2_object7{
+   z-index: 1000;
+   position: absolute;
+    top: -200px;
+    left: 500px;
+    width: 500px;
+    height: 400px;
+    background: url(../port/img/s2_object7.png) no-repeat;
+}
+.s2_object8{
+   z-index: 1000;
+   position: absolute;
+    top: -200px;
+    right: 100px;
+    width: 500px;
+    height: 300px;
+    background: url(../port/img/s2_object8.png) no-repeat;
+}
+/*contact*/
+.c_container{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   background: #000;
+}
+.yewon{
+   font-family: 'S-CoreDream-3Light';
+  padding-top: 250px;
+   color: #fff;
+   font-size: 37px;
+}
+.c_text{
+   font-family: 'HSBombaram3_Thin';
+   font-size: 100px;
+   color: #fff;
+}
+.select_container{
+   margin: 0 auto;
+   justify-content: space-between;
+   width: 500px;
+   height: 47px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+.select1{
+   border-radius: 5px;
+   background-color: rgba(255,255,255,.5);
+   padding: 10px 10px;
+   align-items: center;
+   display: flex;
+}
+.circle1{
+   margin-right: 18px;
+   width: 23px;
+   height: 23px;
+   background:url(./img/contact-circle.png);
+   background-position: 0 2px;
+}
+.Email{
+   font-family: 'S-CoreDream-3Light';
+   font-size: 25px;
+   border-radius: 5px;
+   color: #fff;
+}
+.select2{
+   padding: 10px 10px;
+   align-items: center;
+   display: flex;
+}
+.circle2{
+   margin-right: 18px;
+   width: 23px;
+   height: 23px;
+   background:url(./img/contact-circle.png);
+   background-position: 0 -27px;
+}
+.circle2:hover{
+   background:url(./img/contact-circle.png);
+   background-position: 1px 2px;
+}
+.Phone{
+   font-family: 'S-CoreDream-3Light';
+   font-size: 25px;
+   color: #fff;
+
+}
+.select3{
+   padding: 10px 10px;
+   align-items: center;
+   display: flex;
+}
+.circle3{
+   margin-right: 18px;
+   width: 23px;
+   height: 23px;
+   background:url(./img/contact-circle.png);
+   background-position: 0 -27px;
+}
+.circle3:hover{
+   background:url(./img/contact-circle.png);
+   background-position: 1px 2px;
+}
+.Kakao{
+   font-family: 'S-CoreDream-3Light';
+   font-size: 25px;
+   color: #fff;
+}
+.input-text{
+   font-family: 'S-CoreDream-3Light';
+   width: 460px;
+   padding: 0 20px;
+   height: 40px;
+   font-size: 23px;
+   margin-top: 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: rgba(255,255,255,.5);
+}
+.select_box{
+   margin-top: 50px;
+   justify-content: center;
+   align-items: center;
+}
+.input-text::-webkit-input-placeholder {
+   color: rgb(172, 172, 172);
+ }
+ .input-text::-ms-input-placeholder {
+   color: rgb(172, 172, 172);
+ }
+ .input-text::placeholder {
+   color: rgb(172, 172, 172);
+ }
+ .first_page{
+    margin-top: 200px;
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);;
+ }
+ .first_page:hover{
+    color: #fff;
+ }
+ 

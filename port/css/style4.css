@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Cormorant+SC:wght@300;400;500;600;700&family=Croissant+One&family=Harmattan:wght@400;700&family=Italiana&family=Julius+Sans+One&family=Playfair+Display&display=swap");
+
+@font-face {
+  font-family: "IBMPlexSansKR-Text";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YESGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESGothic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.scroll{
+    position: fixed;
+    left: 10px; top: 10px;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: rgba(0,0,0.5);
+    z-index: 10000;
+ }
+ 
+.sec1{
+  z-index: 100;
+}
+ 
+/* layout */
+.container{
+    padding: 30px;
+    display: flex;
+ 
+}
+.fixed {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+#contents {
+}
+span {
+  display: block;
+  margin: 0 auto;
+  z-index: 10000;
+font-family: "Julius Sans One", sans-serif;
+font-size: 24px;
+color: #fff;
+}
+ /* .sec1 {
+  width: 100%;
+  z-index: 200;
+} */
+/* .sec2 {
+  z-index: 199;
+}
+.sec3 {
+  z-index: 198;
+}
+.sec4 {
+  z-index: 197;
+}
+.sec5 {
+  z-index: -2;
+}  */
+
+/* .sec6 {
+  z-index: -1;
+}   */
+
+.desc_box{
+  color: transparent;
+  background: url(../svg/mulumpyo.svg);
+  right: 60px; bottom: 60px;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  z-index: 20000;
+}
+.desc_box:hover{
+  font-size: 18px;
+  font-family: 'YESGothic-Regular';
+  position: fixed;
+  line-height: 26px;
+  color: rgb(10, 10, 10);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.514);
+  border-radius: 10px;
+  background-size: cover;
+  right: 60px; bottom: 60px;
+  width: 600px;
+  height: 50px;
+  z-index: 20000;
+}
+
+
+.sec1 {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+  }
+  .firtext{
+    font-family: "Italiana", serif;
+    font-size: 30px;
+    color: #fff;
+  }
+.mtext{
+    padding: 10px;
+    text-align: center;
+}
+  .mtext .year {
+    font-family: "Bellota Text", cursive;
+    /* font-family: 'Harmattan', sans-serif; */
+    font-size: 30px;
+    color: #fff;
+  }
+  .mtext p {
+    font-family: "Bellota Text", cursive;
+    /* font-family: 'Harmattan', sans-serif; */
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .mtext h1 {
+    margin-top: 10px;
+    font-family: "Italiana", serif;
+    font-size: 7vw;
+    line-height: 0.9;
+    color: #fff;
+    text-align: center;
+  }
+  .mtext button {
+    font-family: "Italiana", serif;
+    letter-spacing: 1px;
+    /* font-family: 'Harmattan', sans-serif; */
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background-color: #fff;
+    color:rgb(59, 59, 59);
+    font-weight: bold;
+    padding: 2px 18px 5px 18px;
+    border-radius: 30px;
+  }
+  
+  
+
+  .sec1_bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/virus-background5.jpg);
+    background-size: cover;
+    overflow: hidden;
+  }
+  .sec1_subbg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/virus-subback.png);
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .object1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+  }
+  .object2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .object3 {
+    position: absolute;
+    top: 50%;
+   left: 50%;
+    width: 400px;
+    height: 400px;
+  }
+  /* .object3:hover {
+    position: absolute;
+    top: 47%;
+    left: 55%;
+    width: 450px;
+  } */
+  .object4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+  }
+  .object5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+  }
+  .object6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+  }
+  /* .object6:hover{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 550px;
+    height: 550px;
+  } */
+  .object7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+  }
+  .object7-5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 480px;
+    height: 480px;
+  }
+  /* .object7-5:hover{
+    position: absolute;
+    top: 51%;
+    left: 49%;
+    width: 500px;
+    height: 500px;
+  } */
+  .object8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+  }
+  /* .object8:hover{
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    width: 450px;
+    height: 450px;
+  } */
+  /*//section1*/
+  .sec2{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .sec2_bg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/vacation-background3.jpg);
+    background-size: cover;
+    overflow: hidden;
+  }
+  .span2{
+    z-index: 10000;
+    margin: 0 auto;
+align-items: center;
+text-align: center;
+font-family: "Julius Sans One", sans-serif;
+font-size: 24px;
+color: rgb(53, 53, 53);
+
+  }
+  .mtext2{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.h1_2{
+  margin-top: 10px;
+  font-family: "Italiana", serif;
+  font-size: 7vw;
+  line-height: 0.9;
+  color: rgb(53, 53, 53);
+  text-align: center;
+}
+.year2{
+  font-family: "Bellota Text", cursive;
+    /* font-family: 'Harmattan', sans-serif; */
+    font-size: 30px;
+    color: rgb(53, 53, 53);
+}
+.p_2{
+  font-family: "Bellota Text", cursive;
+    /* font-family: 'Harmattan', sans-serif; */
+    font-size: 24px;
+    color: rgb(53, 53, 53);
+    margin-top: 20px;
+}
+.button_2{
+  font-family: "Italiana", serif;
+  letter-spacing: 1px;
+  /* font-family: 'Harmattan', sans-serif; */
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(59, 59, 59);
+  color:#fff;
+  font-weight: bold;
+  padding: 2px 18px 5px 18px;
+  border-radius: 30px;
+}
+.v_object1{
+  position: absolute;
+  top: 80%;
+  left: 0%;
+}
+.v_object2{
+  position: absolute;
+  top: 10%;
+  left: 70%;
+}
+.v_object3{
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+.v_object4{
+  position: absolute;
+  top:55%;
+  left: 70%;
+}
+.v_object5{
+  z-index: 10000;
+  position: absolute;
+  top:-20%;
+  left: 70%;
+}
+.v_object6{
+  
+  position: absolute;
+  top: -20%;
+  left: 10%;
+}
+.v_object7{
+  position: absolute;
+  top: -30%;
+  left: 60%;
+}
+
+/*section3*/
+.sec3{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/sculpture-background2.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.button_3{
+  font-family: "Italiana", serif;
+  letter-spacing: 1px;
+  /* font-family: 'Harmattan', sans-serif; */
+  font-size: 18px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+  color: rgb(14, 3, 46);
+  font-weight: bold;
+  padding: 5px 30px;
+  border-radius: 30px;
+}
+.s_object1{
+  position: absolute;
+  top: 20%;
+  left: 65%;
+}
+.s_object2{
+  position: absolute;
+  top: 70%;
+  left: 0%;
+}
+.s_object3{
+  position: absolute;
+  top: 72%;
+  left: 30%;
+}
+.s_object4{
+  position: absolute;
+  top:72%;
+  left: 55%;
+}
+.s_object5{
+  position: absolute;
+  top:0%;
+  left: 70%;
+}
+.s_object6{
+  position: absolute;
+  top: -8%;
+  left: 10%;
+}
+.s_object7{
+  position: absolute;
+  top:35%;
+  left:2%;
+}
+.s_object8{
+  position: absolute;
+  top: 60%;
+  left: 90%;
+}
+
+/*section4*/
+.sec4{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/floating-background2.jpg);
+  background-size: cover;
+  overflow: hidden;
+ }
+ .f_button{
+    font-family: 'S-CoreDream-3Light';
+    font-weight: bold;
+     font-size: 30px;
+     margin-top: 30px;
+     border-radius: 30px;
+     display: inline-block;
+     padding: 5px 40px;
+     background-color:#fff;
+     color: #525ba6;
+ }
+ .f_object1{
+    position: absolute;
+    top: 200px;
+    right: -200px;
+    width: 800px;
+    height: 1000px;
+    background: url(../img/f_object1.png) no-repeat;
+ }
+ .f_object2{
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: url(../img/f_object2.png) no-repeat;
+ }
+ .f_object3{
+    position: absolute;
+    bottom: -400px;
+    left: 200px;
+    width: 650px;
+    height: 600px;
+    background: url(../img/f_object3.png) no-repeat;
+ }
+ .f_object4{
+    position: absolute;
+    top: 200px;
+    left: -100px;
+    width: 600px;
+    height: 600px;
+    background: url(../img/f_object4.png) no-repeat;
+ }
+ .f_object5{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../img/f_object5.png) no-repeat;
+ }
+ .f_object6{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 600px;
+    height: 600px;
+    background: url(../img/f_object6.png) no-repeat;
+ }
+
+ /*section5*/
+
+ .sec5{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/sculpture2-background2.jpg);
+  background-size: cover;
+  overflow: hidden;
+ }
+.s2_object1{
+  z-index: 1000;
+  position: absolute;
+   top: 50%;
+   right: 50%;
+   width: 800px;
+   height: 800px;
+   background: url(../img/s2_object1.png) no-repeat;
+}
+.s2_object2{
+  z-index: 1000;
+  position: absolute;
+   top: 90%;
+   left: 51%;
+   width: 1000px;
+   height: 800px;
+   background: url(../img/s2_object2.png) no-repeat;
+}
+.s2_object3{
+  z-index: 1000;
+  position: absolute;
+   top: 40%;
+   right: -20%;
+   width: 500px;
+   height: 500px;
+   background: url(../img/s2_object3.png) no-repeat;
+}
+.s2_object4{
+  z-index: 1000;
+  position: absolute;
+   top: 15%;
+   left: 10%;
+   width: 600px;
+   height: 600px;
+   background: url(../img/s2_object4.png) no-repeat;
+}
+.s2_object5{
+  z-index: 1000;
+  position: absolute;
+   bottom: -20%;
+   left: 10%;
+   width: 400px;
+   height: 400px;
+   background: url(../img/s2_object5.png) no-repeat;
+}
+.s2_object6{
+  z-index: 1000;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 400px;
+   background: url(../img/s2_object8.png) no-repeat;
+}
+.s2_object7{
+  z-index: 1000;
+  position: absolute;
+   top: -20%;
+   left: 30%;
+   width: 500px;
+   height: 400px;
+   background: url(../img/s2_object7.png) no-repeat;
+}
+.s2_object8{
+   z-index: 1000;
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   width: 500px;
+   height: 300px;
+   background: url(../img/s2_object6.png) no-repeat;
+}
+
+/*contact*/
+.section6{
+  display: flex;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  text-align: center;
+}
+
+.sec6{
+margin-top: 150px;
+margin-bottom: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.con_img{
+  width: 30vh;
+  height: 50vh;
+ background: url(../img/face.jpg);
+ background-size: cover;
+ margin-right: 80px;
+}
+.con_text{
+  text-align: left;
+  width: 400px;
+}
+.con_text span{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-family: "Italiana", serif;
+}
+
+.con_text p{
+  margin-top: 6px;
+  color: #fff;
+
+}
+.link{
+  display: inline-block;
+  border-bottom: 1px solid;
+  color: #ccc;
+}
+.link:hover{
+  display: inline-block;
+  border-bottom: 1px solid;
+  color: #fff;
+}
+.btn{
+  border:1px solid #fff;
+  line-height: 19px;
+  margin-top: 80px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 18px;
+  padding: 3px 10px 6px 10px;
+}
+.btn:hover{
+  border:1px solid #fff;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="contents">
+      <section id="section1">
+        <div class="sec1"
+          data-0 = "width: 0%; height: 0vh; border-radius: 50%; transform: translate(-50%,-50%) rotate(-720deg)"
+          data-2000 = "width: 100%; height: 100vh; border-radius: 0%; transform: translate(-50%,-50%) rotate(0deg)"
+        >
+          <div class="mtext">
+            <h1 class="fixed"
+            data-2000 = "transform: translate(-50%, -50%) scale(0);"
+            data-3000 = "transform: translate(-50%, -50%) scale(1);"
+            >VIRUS BLOOMING</h1>
+          </div>
+          <div
+            class="object1 fixed"
+            data-0="width: 0px; left: 50%; top: 50%;"
+            data-1600="width: 500px; left: 50%; top: 50%;"
+            data-1700="width: 500px; left: 0%; top: 10%;"
+          >
+            <img src="./svg/object1.svg" alt="1" />
+          </div>
+          <div
+            class="object2 fixed"
+            data-100="width: 0px; left: 50%; top: 50%;"
+            data-1100="width: 500px; left: 50%; top: 50%;"
+            data-1800="width: 500px; left: 90%; top: 80%;"
+            
+            >
+            <img src="./svg/object2.svg" alt="2" />
+          </div>
+          <div
+            class="object3 fixed"
+            data-200="width: 0px; left: 50%; top: 50%;"
+            data-1200="width: 500px; left: 50%; top: 51%;"
+            data-1900="width: 500px; left: 70%; top: 10%;"
+          >
+            <img src="./svg/object3.svg" alt="3" />
+          </div>
+          <div
+            class="object4 fixed"
+            data-300="width: 0px; left: 50%; top: 50%;"
+            data-1300="width: 500px; left: 50%; top: 50%;"
+            data-2000="width: 500px; left: 20%; top: 80%;"
+          >
+            <img src="./svg/object4.svg" alt="4" />
+          </div>
+          <div
+            class="object5 fixed"
+            data-400="width: 0px; left: 50%; top: 50%;"
+            data-1400="width: 400px; left: 50%; top: 50%;"
+            data-2100="width: 400px; left: 25%; top: 0%;"
+          >
+            <img src="./svg/object3.svg" alt="5" />
+          </div>
+           <div
+            class="object6 fixed"
+            data-500="width: 0px; left: 50%; top: 50%;"
+            data-1500="width: 300px; left: 50%; top: 50%;"
+            data-2200="width: 300px; left: 90%; top: 30%;"
+          >
+            <img src="./svg/object2.svg" alt="6" />
+          </div>
+          <div
+            class="object7 fixed"
+            data-600="width: 0px; left: 50%; top: 50%;"
+            data-1600="width: 500px; left: 50%; top: 50%;"
+            data-2300="width: 500px; left: 55%; top: 90%;"
+          >
+            <img src="./svg/object5.svg" alt="7" />
+          </div>
+          <!--<div
+            class="object8 fixed"
+            data-700="width: 0px"
+            data-1700="width: 800px"
+          >
+            <img src="./svg/object1.svg" alt="8" />
+          </div> -->
+        </div>
+      </section>
+      <!-- //section1 -->
+      <section id="section2"></section>
+      <!-- //section1 -->
+      <section id="section3"></section>
+      <!-- //section1 -->
+      <section id="section4"></section>
+      <!-- //section1 -->
+      <section id="section5"></section>
+      <!-- //section1 -->
+      <section id="section6"></section>
+      <!-- //section1 -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.26/dist/skrollr.min.js"></script>
+    <script>
+      $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+        $(".scroll").text(scroll);
+      });
+      var s = skrollr.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.container{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/seaBack.svg) no-repeat center center;
+    background-size: cover;
+}
+.boat{
+    position: absolute;
+    top: 44%;
+    right: 45%;
+    width: 4%;
+    height: 5%;
+    animation: boat 3s infinite;
+}
+@keyframes boat {
+    0%{transform: rotate(0deg);}
+    33%{transform: rotate(-4deg);}
+    66%{transform: rotate(4deg);}
+    100%{transform: rotate(0deg);}
+}
+.light{
+    position: absolute;
+    top: 23%;
+    right: 12%;
+    width: 10%;
+    height: 5%;
+    animation: light 5s infinite;
+}
+@keyframes light {
+    0%{transform: translate(0,0); }
+    50%{transform: translate(-20px,0);}
+    100%{transform: translate(0,0);}
+}
+.glass{
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    width: 30%;
+    height: 5%;
+    animation: glass 0.8s infinite;
+}
+@keyframes glass {
+    0%{transform: translate(0,0); }
+    50%{transform: translate(0,2px);}
+    100%{transform: translate(0,0);}
+}
+.cloud{
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    width: 60%;
+    height: 5%;
+    animation: cloud 20s infinite;
+}
+@keyframes cloud {
+    0%{transform: translate(0,0); }
+    50%{transform: translate(-60px,0);}
+    100%{transform: translate(0,0);}
+}
+.bird{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 6%;
+    height: 5%;
+    animation: bird 50s infinite;
+}
+@keyframes bird {
+    0%{transform: translate(0,0) scale(1); }
+    50%{transform: translate(-500px,0) scale(2);}
+    100%{transform: translate(0,0) scale(1);}
+}
+.tele_telescope{
+    position: absolute;
+    top: -5%;
+    right: 0%;
+    width: 100%;
+}
