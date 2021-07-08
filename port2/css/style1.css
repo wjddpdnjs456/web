@@ -517,15 +517,15 @@
 
 .sec5Btree {
     position: absolute;
-    bottom: 0%;
+    bottom: 3%;
     left: 0%;
-    width: 1500px;
+    width: 1650px;
     height: 100vh;
 }
 
 .sec5Rtree {
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
     right: 0%;
     width: 1500px;
     height: 100vh;
